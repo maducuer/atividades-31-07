@@ -70,7 +70,7 @@ const removerPedido = (id) => {
             return produto
         }
     });
-    setlistaPedidos(listaAux);
+    setListaPedidos(listaAux);
 }
 
 
@@ -79,10 +79,10 @@ const removerPedido = (id) => {
             <h1>Tênis Esportivos</h1>
 
             {
-              listaProdutos.map((produtos) =>
-              <div key={produtos.id}> 
-              <p>{produtos.nome}</p>
-              <p>{produtos.preco}</p>
+              listaProdutos.map((produto) =>
+              <div key={produto.id}> 
+              <p>{produto.nome}</p>
+              <p>{produto.preco}</p>
               <button onClick={()=> adicionarItemPedidos(produto)}>Selecionar</button>
               </div>
               )
