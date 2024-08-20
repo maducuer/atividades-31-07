@@ -41,6 +41,8 @@
 
 
 import {useState} from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
 
@@ -75,6 +77,9 @@ const removerPedido = (id) => {
 
 
     return (
+        <>
+        <Header titulo={"Volêi"}/>
+        
     <div>
             <h1>Tênis Esportivos</h1>
 
@@ -97,5 +102,7 @@ const removerPedido = (id) => {
     )
 }
 </div>
+<Footer desenvolvedor={"Madu"}/>
+</>
     );
 }
